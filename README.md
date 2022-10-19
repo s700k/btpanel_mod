@@ -1,7 +1,9 @@
 ## 宝塔面板7.7安装脚本&优化补丁
 
 * 宝塔面板7.7优化版安装脚本  
-`wget -O install.sh http://f.cccyun.cc/bt/install_6.0.sh && bash install.sh`
+```bash
+wget -O install.sh http://f.cccyun.cc/bt/install_6.0.sh && bash install.sh
+```
 
 * 宝塔面板7.7一键优化补丁  
 `wget -O optimize.sh http://f.cccyun.cc/bt/optimize.sh && bash optimize.sh`
