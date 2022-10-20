@@ -1,27 +1,49 @@
 ## 宝塔面板7.7安装脚本&优化补丁
 
-* 宝塔面板7.7优化版安装脚本  
+**宝塔面板7.7优化版安装脚本**
+
+优化：去除无用接口、减少无用代码执行、减少对于宝塔云端请求、去除面板广告等，保持面板干净清爽。
+
+修复：兼容新版本面板运行环境、修复面板XSS高危漏洞。
+
+* 原链接
 ```bash
 wget -O install.sh http://f.cccyun.cc/bt/install_6.0.sh && bash install.sh
 ```
-
-* 宝塔面板7.7一键优化补丁  
-```bash
-wget -O optimize.sh http://f.cccyun.cc/bt/optimize.sh && bash optimize.sh
-```
-  
-***如果服务器无法访问原博主的链接，请使用以下修改版脚本***
-
-* 宝塔面板7.7优化版安装脚本(mod)  
-```bash
-wget -O install.sh https://raw.githubusercontent.com/s700k/btpanel_mod/main/install_6.0_mod.sh && bash install.sh
-```
-
-* 宝塔面板7.7一键优化补丁(mod)  
+* 如果原链接无法访问
 ```bash
 wget -O optimize.sh https://raw.githubusercontent.com/s700k/btpanel_mod/main/optimize_mod.sh && bash optimize.sh
 ```
-  
+
+**宝塔面板7.7一键优化补丁**
+
+1.去除宝塔面板强制绑定账号
+
+2.去除各种删除操作时的计算题与延时等待
+
+3.去除创建网站自动创建的垃圾文件（index.html、404.html、.htaccess）
+
+4.关闭未绑定域名提示页面，防止有人访问未绑定域名直接看出来是用的宝塔面板
+
+5.关闭活动推荐与在线客服，去除首页企业版广告
+
+6.去除自动校验文件与上报信息定时任务
+
+7.去除面板日志与网站绑定域名上报
+
+* 原链接
+```bash
+wget -O optimize.sh http://f.cccyun.cc/bt/optimize.sh && bash optimize.sh
+```
+* 如果原链接无法访问
+```bash
+wget -O optimize.sh https://raw.githubusercontent.com/s700k/btpanel_mod/main/optimize_mod.sh && bash optimize.sh
+```
+* 如果Ngnix创建的网站出现403 forbidden(保留网站创建的文件)
+```bash
+wget -O optimize.sh https://raw.githubusercontent.com/s700k/btpanel_mod/main/optimize_mod2.sh && bash optimize.sh
+```
+
 Credit @消失的彩虹海  
 https://blog.cccyun.cn/post-433.html  
 https://blog.cccyun.cn/post-431.html
