@@ -12,7 +12,7 @@ wget -O install.sh http://f.cccyun.cc/bt/install_6.0.sh && bash install.sh
 ```
 * 如果原链接无法访问
 ```bash
-wget -O optimize.sh https://raw.githubusercontent.com/s700k/btpanel_mod/main/optimize_mod.sh && bash optimize.sh
+wget -O install.sh https://raw.githubusercontent.com/s700k/btpanel_mod/main/install_6.0_mod.sh && bash install.sh
 ```
 
 **宝塔面板7.7一键优化补丁**
